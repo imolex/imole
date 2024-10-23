@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>iMolex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-yellow-50 to-purple-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-6">
+            <div class="flex items-center">
+                <div class="bg-orange-500 text-white rounded-full p-2">
+                    <span class="font-bold text-lg">iM</span>
+                </div>
+                <span class="ml-2 text-gray-700 text-xl">iMOLEX Bookshop</span>
+            </div>
+            <nav class="flex flex-wrap justify-center md:justify-end items-center space-x-6 mt-4 md:mt-0">
+                <a class="text-gray-700" href="index.html">Home</a>
+                <a class="text-gray-700" onclick="scrollToSection('section1')">Categories</a>
+                <a class="text-gray-700" onclick="scrollToSection('section2')">Store</a>
+                <a class="text-gray-700" onclick="scrollToSection('section3')">Contact</a>
+                <a class="text-gray-700" onclick="scrollToSection('section4')">About Us</a>
+            </nav>
+            <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                <a href="search.html" class="text-gray-700">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="cart.html" class="text-gray-700">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <button 
+                    class="border border-orange-500 text-orange-500 px-4 py-2 rounded-full" 
+                    onclick="window.location.href='https://otpless.com/rc3/appid/Y95ATHG1FJRQJQJTZ5JI?redirect=index.html'">Login
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+
+    <main class="container mx-auto mt-10 px-6">
+        <section class="text-center">
+            <h1 class="text-4xl font-bold text-gray-800">Unleash Your <span class="text-orange-500">Creativity</span> With The Power Of A Book.</h1>
+            <p class="text-gray-600 mt-4">Buy and sell old books with ease—discover hidden gems and give your favorites a new home!</p>
+            <div class="mt-6 flex flex-col md:flex-row justify-center space-x-0 md:space-x-4">
+                <button class="bg-green-500 text-white px-6 py-3 rounded-full mb-2 md:mb-0" onclick="scrollToSection('section1')">Purchase Now</button>
+                <button class="border border-gray-300 text-gray-700 px-6 py-3 rounded-full">Explore Bookshop</button>
+            </div>
+            <div class="relative mt-10">
+                <img alt="Books on a shelf" class="mx-auto" height="300" src="images/2560.webp" width="600"/>
+                <div class="absolute top-0 right-0 bg-white shadow-md p-4 rounded-lg">
+                    <p class="text-orange-500 font-bold">New & Old</p>
+                    <p class="text-gray-700">in ONE, at ONCE</p>
+                </div>
+                <div class="absolute bottom-0 left-0 bg-white shadow-md p-4 rounded-lg cursor-pointer" onclick="window.location.href='userreview.html'">
+                    <p class="text-gray-700">See Happy Reader</p>
+                    <div class="flex space-x-1">
+                        <img alt="Reader 1" class="rounded-full" height="20" src="images/fake pp.jpeg" width="20"/>
+                        <img alt="Reader 2" class="rounded-full" height="20" src="images/fake pp2.jpeg" width="20"/>
+                        <img alt="Reader 3" class="rounded-full" height="20" src="images/fake pp3.jpeg" width="20"/>
+                        <img alt="Reader 4" class="rounded-full" height="20" src="images/fake pp4.png" width="20"/>
+                        <img alt="Reader 5" class="rounded-full" height="20" src="images/fake pp2.jpeg" width="20"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mt-20">
+            <h2 class="text-3xl font-bold text-gray-800 text-center">Browse By Book Types</h2>
+            <div class="mt-10 flex flex-wrap justify-center space-x-6">
+                <div class="bg-white shadow-md p-6 rounded-lg text-center m-2 cursor-pointer" onclick="window.location.href='School Books.html'">
+                    <i class="fas fa-book text-gray-700 text-2xl"></i>
+                    <p class="text-gray-800 mt-2">School Books</p>
+                    <p class="text-gray-500">302 Items</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg text-center m-2 cursor-pointer" onclick="window.location.href='Govt. Exam Books.html'">
+                    <i class="fas fa-book text-gray-700 text-2xl"></i>
+                    <p class="text-gray-800 mt-2">Govt. Exam Books</p>
+                    <p class="text-gray-500">296 Items</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg text-center m-2 cursor-pointer" onclick="window.location.href='Self-Improvment.html'">
+                    <i class="fas fa-book text-gray-700 text-2xl"></i>
+                    <p class="text-gray-800 mt-2">Self-Improvment</p>
+                    <p class="text-gray-500">258 Items</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg text-center m-2 cursor-pointer" onclick="window.location.href='Spritual.html'">
+                    <i class="fas fa-book text-gray-700 text-2xl"></i>
+                    <p class="text-gray-800 mt-2">Spritual</p>
+                    <p class="text-gray-500">169 Items</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg text-center m-2 cursor-pointer" onclick="window.location.href='Poetry.html'">
+                    <i class="fas fa-book text-gray-700 text-2xl"></i>
+                    <p class="text-gray-800 mt-2">Poetry</p>
+                    <p class="text-gray-500">302 Items</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg text-center m-2 cursor-pointer" onclick="window.location.href='encyclopedia.html'">
+                    <i class="fas fa-book text-gray-700 text-2xl"></i>
+                    <p class="text-gray-800 mt-2">Encyclopedia</p>
+                    <p class="text-gray-500">302 Items</p>
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-lg text-center m-2 cursor-pointer" onclick="window.location.href='Others.html'">
+                    <i class="fas fa-book text-gray-700 text-2xl"></i>
+                    <p class="text-gray-800 mt-2">Others</p>
+                    <p class="text-gray-500">302 Items</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="section1" class="mt-20 bg-orange-50 py-10">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">Books <span class="text-orange-500">50% off</span> now! Don't miss such a deal!</h2>
+                    <div class="mt-6 flex flex-col md:flex-row space-x-0 md:space-x-4">
+                        <button class="bg-orange-500 text-white px-6 py-3 rounded-full mb-2 md:mb-0" onclick="window.location.href='offertab.html'">Purchase Now</button>
+                        <button class="border border-gray-300 text-gray-700 px-6 py-3 rounded-full">Get Coupon</button>
+                    </div>
+                </div>
+                <div class="flex flex-wrap space-x-4 mt-4 md:mt-0">
+                    <img alt="Book cover 1" class="shadow-md" height="150" src="images/download.jpeg" width="100"/>
+                    <img alt="Book cover 2" class="shadow-md" height="150" src="images/images (1).jpeg" width="100"/>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
